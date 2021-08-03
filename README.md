@@ -74,3 +74,18 @@ There's an even shorter way to add strings! You can use `\()` in a string and yo
 ```swift
 "\(myString) But diffrent." // "This is a string. But diffrent."
 ```
+
+You can make muitiline strings by including three double quotation marks (`"""`) at the beginning and end of your content. 
+
+```swift
+"""
+\(myString)
+But in multiple lines.
+"""
+/*
+"""
+This is a string.
+But in multiple lines.
+"""
+*/
+```
