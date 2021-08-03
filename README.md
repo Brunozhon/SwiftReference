@@ -43,3 +43,34 @@ There are several of types in Swift. They are:
   - `UInt16`
   - `UInt32` (On a 32-bit platform, `Int` is equal to `Int32`)
   - `UInt64` (On a 64-bit platform, `Int` is equal to `Int64`)
+- `Bool`
+
+### String
+
+A string can store any value.
+
+```swift
+"This is a string."
+```
+
+You store it in a variable.
+
+> **Quick reference:**
+> `var` is for values that can mutate. `let` is for values that cannot mutate.
+
+```swift
+let myString = "This is a string."
+```
+
+You can append strings using _string concentration_. String concetration means appending two or more strings together, like this:
+
+```swift
+"One, two," + " three!" // "One, two, three!"
+let quotation = "I said, '" + myString + "'" // "I said, 'This is a string.'"
+```
+
+There's an even shorter way to add strings! You can use `\()` in a string and you're done! Well, not quite done yet, as you'll see...
+
+```swift
+"\(myString) But diffrent." // "This is a string. But diffrent."
+```
