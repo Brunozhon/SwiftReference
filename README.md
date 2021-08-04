@@ -41,8 +41,8 @@ There are several types in Swift. They are:
 - `UInt`
   - `UInt8`
   - `UInt16`
-  - `UInt32` (On a 32-bit platform, `Int` is equal to `Int32`)
-  - `UInt64` (On a 64-bit platform, `Int` is equal to `Int64`)
+  - `UInt32` (On a 32-bit platform, `UInt` is equal to `UInt32`)
+  - `UInt64` (On a 64-bit platform, `UInt` is equal to `UInt64`)
 - `Double`
 - `Float`
 - `Bool`
