@@ -265,8 +265,8 @@ let tooSmall: Int64 = -10_000_000_000_000_000_000 // minus 10 quintrillion
 let tooBig: Int64 = 10_000_000_000_000_000_000 // 10 quintrillion
 ```
 
-If the `Int64`s can be beaten, could there be `Int128`s?
+"If the `Int64`s can be beaten, could there be `Int128`s?" you might think. Copy this code and see your `Int128`! **Note:** This example will not work.
 
-#### `Int128` - A Swift Type of the Future
-
-No, but there might be later.
+```swift
+let anInt128: Int128 = 1_000_000_000_000_000_000_000 // 1 sextillion
+```
