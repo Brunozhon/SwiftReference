@@ -3,7 +3,10 @@
 ## Table of Contents
 
 - [Types](#types)
-  - [String](#string)
+  - [Strings](#strings)
+  - [Integers](#integers)
+    - [Int8](#int8)
+
 
 ## Types
 
@@ -52,7 +55,7 @@ There are several types in Swift. They are:
 - `Float`
 - `Bool`
 
-### String
+### Strings
 
 A string can store any value.
 
