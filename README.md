@@ -164,4 +164,29 @@ let alsoMinForAnInt8: Int8 = -128
 let alsoMaxForAnInt8: Int8 = 127
 ```
 
+### `Int16`
 
+`Int16`s can store any number between -32768 and 32767. Useful if `Int8`s don't have enough space.
+
+```swift
+let twoThousand: Int16 = 2000
+```
+
+But you can still use `Int8`s if you want.
+
+```swift
+let twentyTwo: Int8 = 22
+```
+
+When you add them, you have to do type conversion.
+
+```swift
+let twoThousandTwentyTwo = twoThousand + Int16(twentyTwo)
+```
+
+You will also get a compile-time error if you give it a value lower than -32768 and higher than 32767.
+
+```swift
+let tooLow: Int16 = -50000
+let tooHigh: Int16 = 50000
+```
