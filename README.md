@@ -6,6 +6,7 @@
   - [Strings](#strings)
   - [Integers](#integers)
     - [Int8](#int8)
+    - [Int16](#int16)
 
 
 ## Types
