@@ -1,5 +1,9 @@
 # Swift Reference
 
+## Table of Contents
+
+- [Types](#types)
+
 ## Types
 
 A type in Swift is like a blueprint. Think of a house's blueprint.
