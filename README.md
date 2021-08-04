@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Types](#types)
+  - [String](#string)
 
 ## Types
 
