@@ -241,7 +241,7 @@ Int32.max
 ```
 
 > **Note:**
-> `Int32` is `Int` in 32-bit platforms. So you can do this:
+> `Int32` is `Int` on 32-bit platforms. So you can do this:
 > ```swift
 > let anInt32 = 2_000_000
 > ```
@@ -251,3 +251,22 @@ Int32.max
 > ```
 
 #### `Int64`
+
+`Int64`s can store any number from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807! And you thought the range from `Int32.min` to `Int32.max` was a lot!
+
+```swift
+let anInt64: Int64 = 5_000_000_000_000 // 5 trillion
+```
+
+Also, you need to type convert when adding other values (not shown). And you will get a compile-time error if you set it to a number too big or too small. **Note:** Those numbers can be up to quintrillions (10 to the power of 18)!
+
+```swift
+let tooSmall: Int64 = -10_000_000_000_000_000_000 // minus 10 quintrillion
+let tooBig: Int64 = 10_000_000_000_000_000_000 // 10 quintrillion
+```
+
+If the `Int64`s can be beaten, could there be `Int128`s?
+
+#### `Int128` - A Swift Type of the Future
+
+No, but there might be later.
