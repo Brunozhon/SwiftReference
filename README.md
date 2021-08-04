@@ -7,6 +7,7 @@
   - [Integers](#integers)
     - [Int8](#int8)
     - [Int16](#int16)
+    - [Int32](#int32)
 
 
 ## Types
@@ -144,7 +145,7 @@ let divison = multiplication / 10 // 40 / 10 = 4
 let remainder = divison % 3 // 4 % 3 = 1
 ```
 
-### `Int8`
+#### `Int8`
 
 `Int8`s can store any number between -128 and 127.
 
@@ -173,9 +174,9 @@ let alsoMinForAnInt8: Int8 = -128
 let alsoMaxForAnInt8: Int8 = 127
 ```
 
-### `Int16`
+#### `Int16`
 
-`Int16`s can store any number between -32768 and 32767. Useful if `Int8`s don't have enough space.
+`Int16`s can store any number between -32,768 and 32,767. Useful if `Int8`s don't have enough space.
 
 ```swift
 let twoThousand: Int16 = 2000
@@ -198,4 +199,28 @@ You will also get a compile-time error if you give it a value lower than -32768 
 ```swift
 let tooLow: Int16 = -50000
 let tooHigh: Int16 = 50000
+```
+
+#### `Int32`
+
+> **Quick reference:**
+> You can format numbers using underscores. I will be using this method later on.
+
+`Int32`s can store from -2,147,483,648 to 2,147,483,647. That's a lot!
+
+```swift
+let twoBillion: Int32 = 2_000_000_000
+```
+
+You will need to type convert when adding other values.
+
+```swift
+let twoBillionTwoThousandTwentyTwo: Int32 = twoBillion + Int32(twoThousand) + Int32(twentyTwo)
+```
+
+And not to mention, bounds.
+
+```swift
+let tooLow: Int32 = -2_500_000_000
+let tooHigh: Int32 = 2_500_000_000
 ```
