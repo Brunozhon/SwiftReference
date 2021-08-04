@@ -8,6 +8,7 @@
     - [Int8](#int8)
     - [Int16](#int16)
     - [Int32](#int32)
+    - [Int64](#int64)
 
 
 ## Types
@@ -201,6 +202,13 @@ let tooLow: Int16 = -50000
 let tooHigh: Int16 = 50000
 ```
 
+You can also use `Int16.min` and `Int16.max`.
+
+```swift
+Int16.min
+Int16.max
+```
+
 #### `Int32`
 
 > **Quick reference:**
@@ -218,9 +226,28 @@ You will need to type convert when adding other values.
 let twoBillionTwoThousandTwentyTwo: Int32 = twoBillion + Int32(twoThousand) + Int32(twentyTwo)
 ```
 
-And not to mention, bounds.
+And you will get a compile-time error if you set it lower than -2,147,483,648 or higher than 2,147,483,647.
 
 ```swift
 let tooLow: Int32 = -2_500_000_000
 let tooHigh: Int32 = 2_500_000_000
 ```
+
+And you can also use `Int32.min` and `Int32.max`.
+
+```swift
+Int32.min
+Int32.max
+```
+
+> **Note:**
+> `Int32` is `Int` in 32-bit platforms. So you can do this:
+> ```swift
+> let anInt32 = 2_000_000
+> ```
+> instead of this:
+> ```swift
+> let anInt32: Int32 = 2_000_000
+> ```
+
+#### `Int64`
