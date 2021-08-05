@@ -1,4 +1,17 @@
-# Swift Reference
+# Swift 5.3 Reference
+
+A Swift 5.3 reference including code examples.
+
+## How to use
+
+There are no `.zip` or `.tar.gz` files to manage. Simply read this reference online and you're done!
+
+## Want to contribute?
+
+- Suggest code examples by creating an Issue.
+- Add your own code examples by creating a Pull Request.
+
+For more information, check out CONTRIBUTING.md.
 
 ## Table of Contents
 
