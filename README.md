@@ -365,3 +365,38 @@ Floats are just like doubles, but they have precision of 6 decimal digits and th
 let myFloat: Float = 2.99
 let stillADouble = 2.99
 ```
+
+Floats are not so intresting, so how about some booleans?
+
+### Booleans
+
+Booleans can only be `true` or `false`, but they are very useful. They can be directly stored:
+
+```swift
+let myBoolean = true
+```
+
+or used in if loops.
+
+> **Note:**
+> You may not have learned about if loops, but we will learn them later.
+
+```swift
+if myBoolean {
+  print("myBoolean is true!")
+}
+if myBoolean {
+  print("Yay!")
+} else {
+  print("Boo!")
+}
+```
+
+What was the most intresting topic?
+
+- [ ] Strings
+- [ ] Integers
+- [ ] Unsigned Integers
+- [ ] Doubles
+- [ ] Floats
+- [ ] Booleans
