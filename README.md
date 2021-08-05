@@ -392,7 +392,7 @@ if myBoolean {
 }
 ```
 
-What was the most intresting topic?
+What was the most intresting topic? (This list in uncheckable, but you can pretend you are checking the option. Or you can write the list yourself and tick the topic that you think was most intresting.)
 
 - [ ] Strings
 - [ ] Integers
@@ -400,3 +400,4 @@ What was the most intresting topic?
 - [ ] Doubles
 - [ ] Floats
 - [ ] Booleans
+- [ ] None
