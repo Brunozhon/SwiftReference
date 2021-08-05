@@ -308,19 +308,19 @@ Anyways, you should go well with the table.
 > **Additional notes:**
 > `UInt32` is `UInt` in 32-bit platforms. `UInt64` is `UInt` in 64-bit platforms.
 > So this code:
-> ```
+> ```swift
 > let myUInt32: UInt32 = 4_000_000_000 // 4 trillion
 > let myUInt64: UInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
 > ```
 > can be replaced like this in 32-bit platforms:
 > ```swift
-> let myUInt32 = 4_000_000_000 // 4 trillion
+> let myUInt32: UInt = 4_000_000_000 // 4 trillion
 > let myUInt64: UInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
 > ```
 > and this in 64-bit platforms:
 > ```swift
 > let myUInt32: UInt32 = 4_000_000_000 // 4 trillion
-> let myUInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
+> let myUInt64: UInt = 18_000_000_000_000_000_000 // 18 quintrillion
 > ```
 
 
