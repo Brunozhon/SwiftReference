@@ -336,7 +336,7 @@ Doubles are floating-point numbers.
 > 9.9999
 > 0.0001
 > ```
-> See? They all have a floating point? What is a floating point?
+> See? They all have a floating point. What is a floating point?
 > A floating point is a decimal point. This is a decimal point (in case you forgot):
 > ```
 > .
