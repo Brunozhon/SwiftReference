@@ -10,6 +10,8 @@
     - [Int32](#int32)
     - [Int64](#int64)
   - [Unsigned Integers](#unsigned-integers)
+  - [Doubles](#doubles)
+  - [Floats](#floats)
 
 
 ## Types
@@ -323,4 +325,43 @@ Anyways, you should go well with the table.
 > let myUInt64: UInt = 18_000_000_000_000_000_000 // 18 quintrillion
 > ```
 
+### Doubles
 
+Doubles are floating-point numbers.
+
+> **What is a floating-point number?**
+> A floating-point number is a decimal number. Remenber decimal numbers in math? They are numbers like this:
+> ```swift
+> 3.1419
+> 9.9999
+> 0.0001
+> ```
+> See? They all have a floating point? What is a floating point?
+> A floating point is a decimal point. This is a decimal point (in case you forgot):
+> ```
+> .
+> ```
+
+They have precision of 15 decimal digits.
+
+```swift
+// Precise:
+9.9999999999
+// Not so precise:
+9.99999999999999999999
+```
+
+They can be stored in a variable like this:
+
+```swift
+let myDouble = 3.1419
+```
+
+### Floats
+
+Floats are just like doubles, but they have precision of 6 decimal digits and they have to be declared explictly, like this:
+
+```swift
+let myFloat: Float = 2.99
+let stillADouble = 2.99
+```
