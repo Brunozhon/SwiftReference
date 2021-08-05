@@ -12,6 +12,11 @@
   - [Unsigned Integers](#unsigned-integers)
   - [Doubles](#doubles)
   - [Floats](#floats)
+- [Variables](#variables)
+  - [`var`](#var)
+  - [`let`](#let)
+
+
 
 
 ## Types
@@ -401,3 +406,45 @@ What was the most intresting topic? (This list in uncheckable, but you can prete
 - [ ] Floats
 - [ ] Booleans
 - [ ] None
+
+## Variables
+
+There are two diffrent types of variables. They are `var` and `let`.
+
+You can define a variable like this (for var):
+
+```swift
+var name = value
+var name: type = value
+var name: type // NEW!
+```
+
+And this (for let):
+
+```swift
+let name = value
+let name: type = value
+```
+
+### `var`
+
+`var` defines a variable.
+
+```swift
+var myFavoriteNumber = 10
+```
+
+You can use it for storing your favorite `UIKit` color.
+
+```swift
+import UIKit
+var myFavoriteColor = UIColor.red
+```
+### `let`
+
+`let` defines a constant.
+
+```swift
+let myName = "John Doe"
+```
+
