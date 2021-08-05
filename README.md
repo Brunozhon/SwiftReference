@@ -265,8 +265,38 @@ let tooSmall: Int64 = -10_000_000_000_000_000_000 // minus 10 quintrillion
 let tooBig: Int64 = 10_000_000_000_000_000_000 // 10 quintrillion
 ```
 
-"If the `Int64`s can be beaten, could there be `Int128`s?" you might think. Copy this code and see your `Int128`! **Note:** This example will not work.
+> **Note:**
+> `Int64` is `Int` in 64-bit platforms. So you could use this code:
+> ```swift
+> let anInt64 = 5_000_000_000_000 // 5 trillion
+> ```
+> instead of this:
+> ```swift
+> let anInt64: Int64 = 5_000_000_000_000 // 5 trillion
+> ```
+
+### Unsigned Integers
+
+Unsigned integers cannot have a minus sign (`-`).
+
+They are declared with the type `UInt`.
 
 ```swift
-let anInt128: Int128 = 1_000_000_000_000_000_000_000 // 1 sextillion
+let goodUnsignedInteger: UInt = 100
+let badUnsignedInteger: UInt = -100
 ```
+
+As you might know, `UInt`s have 4 types.
+
+- `UInt8`
+- `UInt16`
+- `UInt32`
+- `UInt64`
+
+But you know a lot about integers (`Int8`, `Int16`, `Int32`, and `Int64` but not `Int`), so I will tell you a brief reference.
+
+Anyways, you should go well with the table.
+
+| `UInt` type | Min | Max |
+|-------------|-----|-----|
+| `UInt8`     | 0   | 255 |
