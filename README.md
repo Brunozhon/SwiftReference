@@ -9,6 +9,7 @@
     - [Int16](#int16)
     - [Int32](#int32)
     - [Int64](#int64)
+  - [Unsigned Integers](#unsigned-integers)
 
 
 ## Types
@@ -297,6 +298,29 @@ But you know a lot about integers (`Int8`, `Int16`, `Int32`, and `Int64` but not
 
 Anyways, you should go well with the table.
 
-| `UInt` type | Min | Max |
-|-------------|-----|-----|
-| `UInt8`     | 0   | 255 |
+| `UInt` type | Min | Max                        |
+|-------------|-----|----------------------------|
+| `UInt8`     | 0   | 255                        |
+| `UInt16`    | 0   | 65,535                     |
+| `UInt32`    | 0   | 4,294,967,295              |
+| `UInt64`    | 0   | 18,446,744,073,709,551,615 |
+
+> **Additional notes:**
+> `UInt32` is `UInt` in 32-bit platforms. `UInt64` is `UInt` in 64-bit platforms.
+> So this code:
+> ```
+> let myUInt32: UInt32 = 4_000_000_000 // 4 trillion
+> let myUInt64: UInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
+> ```
+> can be replaced like this in 32-bit platforms:
+> ```swift
+> let myUInt32 = 4_000_000_000 // 4 trillion
+> let myUInt64: UInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
+> ```
+> and this in 64-bit platforms:
+> ```swift
+> let myUInt32: UInt32 = 4_000_000_000 // 4 trillion
+> let myUInt64 = 18_000_000_000_000_000_000 // 18 quintrillion
+> ```
+
+
