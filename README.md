@@ -28,9 +28,9 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
 - [Variables](#variables)
   - [`var`](#var)
   - [`let`](#let)
-
-
-
+- [Functions and Closures](#functions-and-closures)
+  - [Functions](#functions)
+  - [Closures](#closures)
 
 ## Types
 
@@ -486,3 +486,118 @@ A closure is declared like this:
   code
 }
 ```
+
+> **Why capitalize the first letter?**
+> Swift developers capitalize names of types to avoid confusion between types and variables. This is useful if you had a structure/class with the same name as a variable. Like this:
+> ```swift
+> class Space { /*...*/ }
+> var space = Space()
+> ```
+> Or you would end up with this:
+> ```swift
+> class space { /*...*/ }
+> var mySpace = space()
+> ```
+> And you would have to rename the variable. And you will not be happy. Especially if you wanted to name your variable `space`.
+
+### Functions
+
+Imagine repeating this block of code many times.
+
+```swift
+person.moveForward()
+person.turnLeft()
+person.moveForward()
+person.shakeHands(with: anotherPerson)
+person.uTurn()
+person.moveForward()
+person.turnLeft()
+```
+
+You can make a function. Like this:
+
+```swift
+func shakeHandsWithAPerson() {
+  person.moveForward()
+  person.turnLeft()
+  person.moveForward()
+  person.shakeHands(with: anotherPerson)
+  person.uTurn()
+  person.moveForward()
+  person.turnLeft()
+}
+```
+
+Or one with parameters:
+
+```swift
+func shakeHands(with: Person) {
+  person.moveForward()
+  person.turnLeft()
+  person.moveForward()
+  person.shakeHands(with: with)
+  person.uTurn()
+  person.moveForward()
+  person.turnLeft()
+}
+```
+
+But if you don't want to use `with` as a parameter name in the function, you could use this syntax for a function:
+
+```swift
+func functionName(parameterLabel parameterName: ParameterType) {
+
+}
+```
+
+Which solves the problem like this:
+
+```swift
+func shakeHands(with: Person) {
+  person.moveForward()
+  person.turnLeft()
+  person.moveForward()
+  person.shakeHands(with: anotherPerson)
+  person.uTurn()
+  person.moveForward()
+  person.turnLeft()
+}
+```
+
+### Closures
+
+You can store a closure like this:
+
+```swift
+let greet = { (person: Person) -> Void in
+  print("Hello \(person.name)!")
+}
+```
+
+Wait &mdash; what is `Void`?
+
+> **Quick reference:**
+> `Void` is an empty tuple. So what are tuples? 
+> > **Quick reference:**
+> > A tuple can be declared like this:
+> > ```swift
+> > let toy = ("Toy Train", 5.99)
+> > ```
+> > You can access the properties like this:
+> > ```swift
+> > let toyName = toy.0
+> > ```
+> > You can decompose a tuple like this:
+> > ```swift
+> > let (name, price) = toy
+> > ```
+> > When you need just a value, you can skip unwanted values with an underscore.
+> > ```swift
+> > let (_, justThePrice) = toy
+> > let(justTheName,_) = toy
+> > ```
+> So `Void` is a subsitute for this:
+> ```swift
+> ()
+> ```
+
