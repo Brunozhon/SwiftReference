@@ -350,9 +350,9 @@ Doubles are floating-point numbers.
 > **What is a floating-point number?**
 > A floating-point number is a decimal number. Remenber decimal numbers in math? They are numbers like this:
 > ```swift
-> 3.1419
-> 9.9999
-> 0.0001
+> 3.14159
+> 9.99999
+> 0.00001
 > ```
 > See? They all have a floating point. What is a floating point?
 > A floating point is a decimal point. This is a decimal point (in case you forgot):
