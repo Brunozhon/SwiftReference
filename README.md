@@ -461,3 +461,28 @@ var myFavoriteColor = UIColor.red
 let myName = "John Doe"
 ```
 
+## Functions and Closures
+
+A function is declared like this:
+
+```swift
+func functionName(parameterName: ParameterType) {
+  code
+}
+```
+
+Or this:
+
+```swift
+func functionName(parameterName: ParameterType) -> ReturnType {
+  code
+}
+```
+
+A closure is declared like this:
+
+```swift
+{ (parameterName: ParameterType) -> ReturnType in
+  code
+}
+```
