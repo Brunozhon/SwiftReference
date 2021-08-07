@@ -766,7 +766,7 @@ if isMember && passedFingerprintTest || knowsPassword && passedFaceIDScan {
 
 If-else statments also have a simple syntax:
 
-```
+```swift
 if condition {
   code
 } else {
