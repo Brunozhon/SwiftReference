@@ -30,6 +30,8 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
   - [`let`](#let)
 - [Functions and Closures](#functions-and-closures)
   - [Functions](#functions)
+    - [Async and Await](#async-and-await)
+    - [Mutating](#mutating)
   - [Closures](#closures)
 
 ## Types
@@ -563,6 +565,99 @@ func shakeHands(with: Person) {
   person.turnLeft()
 }
 ```
+
+#### `async` and `await`
+
+Asynchronous functions are defined like this:
+
+```swift
+func fetchJSON(fromServer server: String) async -> [String: String] {
+  let fetchedJSON = await MyDataFetcher.fetch(fromServer: server)
+  let decodedSwiftDictionary: [String: String] = MyDecoder.decodeJSON(fetchedJSON.body)
+  return decodedSwiftDictionary
+}
+```
+
+You can use it like this:
+
+```swift
+let exampleUser = await fetchJSON(fromServer: "https://api.example.com/users/myUsername")
+```
+
+MyDecoder is going to convert the body of the HTTP response into a Swift dictionary.
+
+So assume the header is this:
+
+```
+200 OK
+Content-Type: application/json
+...
+X-Sessions-Left: 59
+```
+
+And the body is this:
+
+```json
+{
+  "username":"myUsername",
+  "name":"My Username",
+  "projects":[
+    {
+      "name":"My Project",
+      "contents":[
+         "index.html",
+         "img/blah.png",
+         "404.html"
+      ],
+      "website_project":"true"
+    }
+  ]
+}
+```
+
+MyDecoder is going to decode it into this:
+
+```swift
+[
+  "username":"myUsername",
+  "name":"My Username"
+]
+```
+
+But why? Swift is a **type-safe language**, so you can't assign a value that is supposed to be `String` into an `Int`.
+
+#### Mutating
+
+Mutating functions can be declared in a struct or a enum.
+
+```swift
+struct MyStruct {
+  var myVariable = 100
+  mutating func add100() {
+    myVariable += 100
+  }
+}
+enum MyEnum {
+  case myCase
+  case anotherCase
+  mutating func changeCases() {
+    switch self {
+      case .myCase:
+        self = .anotherCase
+      case .anotherCase:
+        self = .myCase
+    }
+  }
+}
+```
+
+They have to mutate a variable.
+
+When you accidentaly mutate a value in a regular function, Swift Playgrounds gives you this error:
+
+> **Cannot use mutating member on immutable value: 'self' is immutable**
+> 
+> Mark method 'mutating' to make 'self' mutable.
 
 ### Closures
 
