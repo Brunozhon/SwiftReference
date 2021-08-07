@@ -32,7 +32,13 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
   - [Functions](#functions)
     - [Async and Await](#async-and-await)
     - [Mutating](#mutating)
+    - [Return Types](#return-types)
   - [Closures](#closures)
+- [Statements and Loops](#statements-and-loops)
+  - [If](#if)
+  - [If-else](#if-else)
+
+
 
 ## Types
 
@@ -651,13 +657,19 @@ enum MyEnum {
 }
 ```
 
-They have to mutate a variable.
+They can mutate a variable.
 
-When you accidentaly mutate a value in a regular function, Swift Playgrounds gives you this error:
+#### Return Types
 
-> **Cannot use mutating member on immutable value: 'self' is immutable**
-> 
-> Mark method 'mutating' to make 'self' mutable.
+You define a return type using an arrow `->` and the return type. Easy, peasy.
+
+```swift
+func return15() -> Int {
+  return 15
+}
+```
+
+But the function has to return the value, otherwise it is a compile time error. 
 
 ### Closures
 
@@ -696,3 +708,68 @@ Wait &mdash; what is `Void`?
 > ()
 > ```
 
+Closures can return a value. But it has to be other than `Void`.
+
+```swift
+let return150 = { (number: Int) -> Int in
+  return 150
+}
+```
+
+Later, you can call it.
+
+```swift
+return150()
+```
+
+So, closures are easy as pie.
+
+## Statements and Loops
+
+### If
+
+If has a simple syntax.
+
+```swift
+if condition {
+  code
+}
+```
+
+You can use an if statement like this:
+
+```swift
+let isMember = false
+if isMember {
+  print("Welcome!")
+}
+```
+
+You can combine booleans with the _logical and operator_ (`&&`) or the _logical or operator_ (`||`).
+
+```swift
+let passedFingerprintTest = false
+if isMember && passedFingerprintTest {
+  print("Welcome!")
+}
+```
+
+```swift
+let knowsPassword = true
+let passedFaceIDScan = true
+if isMember && passedFingerprintTest || knowsPassword && passedFaceIDScan {
+  print("Welcome!")
+}
+```
+
+### If-else
+
+If-else statments also have a simple syntax:
+
+```
+if condition {
+  code
+} else {
+  code
+}
+```
