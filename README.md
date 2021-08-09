@@ -774,7 +774,7 @@ if condition {
 }
 ```
 
-Just like this:
+You can use them like this:
 
 ```swift
 var password = "myPassword123"
