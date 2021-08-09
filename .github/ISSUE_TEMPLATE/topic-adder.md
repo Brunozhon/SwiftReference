@@ -1,6 +1,6 @@
 ---
 name: Topic Adder
-about: Add a topic
+about: Add a topic.
 title: ''
 labels: ''
 assignees: ''
