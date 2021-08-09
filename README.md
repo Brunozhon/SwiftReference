@@ -773,3 +773,26 @@ if condition {
   code
 }
 ```
+
+Just like this:
+
+```swift
+var password = "myPassword123"
+if password == "myPassword123" {
+  print("Welcome My User!")
+} else {
+  print("Wrong password: \(password)")
+}
+```
+
+Or this:
+
+```swift
+var username = "myPassword123sUser"
+var faceIDScan = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+if password == "myPassword123" && username == "myUser123" && faceIDScan = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ" {
+  print("Welcome My User!")
+} else {
+  print("Wrong username \(username), password \(password), or face ID scan \(faceIDScan)")
+}
+```
