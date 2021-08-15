@@ -796,3 +796,17 @@ if password == "myPassword123" && username == "myUser123" && faceIDScan = "ABCDE
   print("Wrong username \(username), password \(password), or face ID scan \(faceIDScan)")
 }
 ```
+
+### If-else if-else
+
+If-else if-else loops hace a simple syntax.
+
+```swift
+if condition {
+  code
+} else if anotherCondition {
+  code
+} else {
+  code
+}
+```
