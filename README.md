@@ -37,6 +37,8 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
 - [Statements and Loops](#statements-and-loops)
   - [If](#if)
   - [If-else](#if-else)
+  - [If-else if-else](#if-else-if-else)
+  - [For](#for)
 
 
 
@@ -831,6 +833,77 @@ if num < 3 {
   print("num is less than three")
 } else if num > 3 {
   print("num is greater than three")
+}
+```
+
+### Switches
+
+A switch is defined like this:
+
+```swift
+switch variableName {
+  case caseOne:
+    code
+  case caseTwo, caseThree:
+    code
+  default:
+    code
+}
+```
+
+Switches have to be exhaustive. That means you must handle every possible value in a switch like this:
+
+```swift
+var favoriteVegtable = "tomato"
+switch favoriteVegtable {
+  case "tomato":
+    print("Make tomato soup.")
+  case "lettuce", "cabbage", "cucumber", "kale":
+    print("Make salad.")
+  case "celery":
+    print("Make ants on a log.")
+  default:
+    print("No suggestion.")
+}
+```
+
+Switches must have at least one executable statement. If you don't have one, you can use `break`:
+
+```swift
+break
+```
+
+### For
+
+For loops have a simple syntax:
+
+```swift
+for i in 1...number {
+  code
+}
+```
+
+You can use `break` and `continue` in a for loop.
+
+`break` breaks out of the loop.
+
+```swift
+for i in 1...100 {
+  if i == 50 {
+    break
+  }
+  print(i, terminator: " ")
+}
+```
+
+`continue` skips the iteration.
+
+```swift
+for i in 1...10 {
+  if !i.isMultiple(of: 2) {
+    continue
+  }
+  print(i, terminator: " ")
 }
 ```
 
