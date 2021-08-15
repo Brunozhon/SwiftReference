@@ -810,3 +810,27 @@ if condition {
   code
 }
 ```
+
+You can use it like this:
+
+```swift
+let num = 3
+if num < 3 {
+  print("num is less than three")
+} else if num == 3 {
+  print("num is three")
+} else {
+  print("num is greater than three")
+}
+```
+
+If you want, you can omit the `else`.
+
+```swift
+if num < 3 {
+  print("num is less than three")
+} else if num > 3 {
+  print("num is greater than three")
+}
+```
+
