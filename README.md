@@ -8,7 +8,7 @@ There are no `.zip` or `.tar.gz` files to manage. Simply read this reference onl
 
 ## Want to contribute?
 
-- Suggest code examples by creating an Issue <!--(https://github.com/Brunozhon/SwiftReference/issues/new)--> or [creating a Discussion](https://github.com/Brunozhon/SwiftReference/discussions/new).
+- Suggest code examples by creating an [Issue](https://github.com/Brunozhon/SwiftReference/issues/new/choose) or [creating a Discussion](https://github.com/Brunozhon/SwiftReference/discussions/new).
 - Add your own code examples by [creating a Pull Request](https://github.com/Brunozhon/SwiftReference/compare).
 
 For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/SwiftReference/blob/main/CONTRIBUTING.md#contributing).
