@@ -1,5 +1,7 @@
 # Contributing
 
+## Pull Requests
+
 Please make sure your pull request follows these guidelines.
 
 - **Make indivdual pull requests for every topic or code example you want to add.**
@@ -8,4 +10,11 @@ Please make sure your pull request follows these guidelines.
 - New topics, improvements of code examples, etc. are welcome. Remenber, it's a reference, not a cheatsheet.
 - Check your spelling. Test your code in Swift Playgrounds or a Swift Sandbox. Make sure to use Swift 5.3.
 
-If you want to ask a question, use [Discussions](https://github.com/Brunozhon/SwiftReference/discussions/categories/q-a) too.
+## Issues
+
+Please make sure your issue follows these guidelines:
+
+- **Always try to use an issue template.** If you can't find one, you can create a blank issue.
+- If you're using an issue template, remenber to change the title.
+
+If you want to ask a question, use [Discussions](https://github.com/Brunozhon/SwiftReference/discussions/categories/q-a).
