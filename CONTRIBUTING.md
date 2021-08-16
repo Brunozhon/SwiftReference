@@ -17,7 +17,7 @@ Please make sure your issue follows these guidelines:
 
 - **Always try to use an issue template.** If you can't find one, you can create a blank issue.
 - If you're using an issue template, remenber to change the title.
-<img width="1033" alt="Changing the Title of a Issue Template" src="https://user-images.githubusercontent.com/69879040/129637722-a2bee806-e9f5-4d04-9d2c-dbbf508a33d7.png">
+<img width="550" alt="Changing the Title of a Issue Template" src="https://user-images.githubusercontent.com/69879040/129637722-a2bee806-e9f5-4d04-9d2c-dbbf508a33d7.png">
 
 
 If you want to ask a question, use [Discussions](https://github.com/Brunozhon/SwiftReference/discussions/categories/q-a).
