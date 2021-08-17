@@ -961,7 +961,7 @@ Blast off!
 
 `repeat-while` loops run once, then evaluate the condition. If it is true, it keeps going. Like this:
 
-```
+```swift
 var x = 2
 print("\(x)...")
 repeat {
