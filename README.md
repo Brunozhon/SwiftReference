@@ -34,11 +34,13 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
     - [Mutating](#mutating)
     - [Return Types](#return-types)
   - [Closures](#closures)
-- [Statements and Loops](#statements-and-loops)
+- [Conditionals and Loops](#statements-and-loops)
   - [If](#if)
   - [If-else](#if-else)
   - [If-else if-else](#if-else-if-else)
   - [For](#for)
+  - [While](#while)
+  - [Repeat-while](#repeat-while)
 
 
 
@@ -738,7 +740,7 @@ if condition {
 }
 ```
 
-You can use an if statement like this:
+You can use an if conditional like this:
 
 ```swift
 let isMember = false
@@ -766,7 +768,7 @@ if isMember && passedFingerprintTest || knowsPassword && passedFaceIDScan {
 
 ### If-else
 
-If-else statments also have a simple syntax:
+If-else conditionals also have a simple syntax:
 
 ```swift
 if condition {
@@ -801,7 +803,7 @@ if password == "myPassword123" && username == "myUser123" && faceIDScan = "ABCDE
 
 ### If-else if-else
 
-If-else if-else loops hace a simple syntax.
+If-else if-else conditonals have a simple syntax.
 
 ```swift
 if condition {
@@ -906,4 +908,81 @@ for i in 1...10 {
   print(i, terminator: " ")
 }
 ```
+
+If you don't want every value, you can use `stride(from:to:by:)`.
+
+```swift
+for i in stride(from: 1, to: 10, by: 2) {
+  print(i, terminator: " ")
+}
+```
+
+The *range operator* (`...`) is what I've been using in the code samples. If you don't want to include the final number, you can use the *half-open range operator* (`..<`).
+
+```swift
+for i in 1..<10 {
+  print(i, terminator: " ")
+}
+```
+
+### While
+
+While loops look like this:
+
+```swift
+while condition {
+  code
+}
+```
+
+A while loop that looks like this:
+
+```swift
+var i = 5
+while i != 0 {
+  print("\(i)...")
+  i -= 1
+}
+print("Blast off!")
+```
+
+It will print:
+
+```
+5...
+4...
+3...
+2...
+1...
+Blast off!
+```
+
+### Repeat-while
+
+`repeat-while` loops run once, then evaluate the condition. If it is true, it keeps going. Like this:
+
+```
+var x = 2
+print("\(x)...")
+repeat {
+  x *= 2
+  print("\(x)...")
+} while x > 100
+x *= 2
+print("\(x)!")
+```
+
+It will print:
+
+```
+2...
+4...
+8...
+16...
+32...
+64...
+128...
+256!
+```
+
 
