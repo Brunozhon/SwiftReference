@@ -41,6 +41,12 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
   - [For](#for)
   - [While](#while)
   - [Repeat-while](#repeat-while)
+- [Structures and Enumrations](#structures-and-enumrations)
+  - [Structures](#structures)
+    - [Methods](#methods)
+    - [Properties](#properties)
+    - [Initlizers](#initlizers)
+
 
 
 
@@ -984,5 +990,96 @@ It will print:
 128...
 256!
 ```
+
+## Structures and Enumrations
+
+### Structures
+
+A structure is defined like this:
+
+```
+struct StructName {
+  fields
+}
+```
+
+A structure declaration can contain:
+
+- Methods
+- Properties
+- Initlizers
+
+#### Methods
+
+Methods are like functions. But they're in a structure. Here's an example:
+
+```swift
+struct Counter {
+  ...
+  func getValue() {
+    return x
+  }
+  ...
+}
+```
+
+Remenber [mutating functions](#mutating)? They can change a value, like this:
+
+```swift
+struct Counter {
+  ...
+  mutating func add() {
+    x += 1
+  }
+  mutating func add(_ amount: Int) {
+    x += amount
+  }
+  ...
+}
+```
+
+#### Properties
+
+Properties are like variables but they're in a structure.
+
+```swift
+struct Counter {
+  var x: Int
+  ...
+}
+```
+
+Easy peasy.
+
+#### Initlizers
+
+Initlizers intilize structures. Like this:
+
+```swift
+struct Counter {
+  ...
+  init(startsFrom value: Int) {
+    x = value
+  }
+  ...
+}
+```
+
+Later you can use it:
+
+```swift
+var myCounter = Counter(startsFrom: 1)
+```
+
+You can access properties and methods afterwards:
+
+```swift
+myCounter.x // 1
+myCounter.getValue() // also 1
+myCounter.add() // 2
+myCounter.add(10) // 12
+```
+
+**Did you know?** Structures gain a default initlizer if no initlizer was specifed.
 
 
