@@ -47,9 +47,6 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
     - [Properties](#properties)
     - [Initlizers](#initlizers)
 
-
-
-
 ## Types
 
 A type in Swift is like a blueprint. Think of a house's blueprint.
@@ -997,7 +994,7 @@ It will print:
 
 A structure is defined like this:
 
-```
+```swift
 struct StructName {
   fields
 }
