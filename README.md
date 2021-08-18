@@ -46,6 +46,8 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
     - [Methods](#methods)
     - [Properties](#properties)
     - [Initlizers](#initlizers)
+  - [Enumarations](#enumarations)
+
 
 ## Types
 
@@ -1077,6 +1079,12 @@ myCounter.add() // 2
 myCounter.add(10) // 12
 ```
 
-**Did you know?** Structures gain a default initlizer if no initlizer was specifed.
+**Did you know?** Structures gain a default initlizer if no initlizer was specifed. So you could initlize a structure like this:
+
+```swift
+Counter(x: 1, ...)
+```
+
+### Enumarations
 
 
