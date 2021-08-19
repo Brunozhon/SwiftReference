@@ -1140,7 +1140,7 @@ enum Projectile {
   case sword(damage: Int, enchantements: [Enchantment])
   case shield(damageProtectedFromPlayer: Int, enchantments: [Enchantment])
   case armor(damageProtectedFromPlayer: Int, heaviness: Int, enchantements: [Enchantment])
-  case potion(effect: Enchantment, fullness: Percent)
+  case potion(effect: Enchantment, fullness: Percent, type: PotionType)
 }
 ```
 
@@ -1153,7 +1153,7 @@ var myProjectile = Projectile.sword(damage: Int, enchantments: [.doubleTheDamage
 You can change it like this:
 
 ```swift
-myProjectile = .potion(effect: .weakness(100), fullness: Percent(100))
+myProjectile = .potion(effect: .weakness(100), fullness: Percent(100), type: .splashPotion)
 ```
 
 
