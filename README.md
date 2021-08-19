@@ -1088,3 +1088,30 @@ Counter(x: 1, ...)
 ### Enumarations
 
 
+Enumarations are declared like this:
+
+```swift
+enum EnumName {
+  case caseName
+}
+```
+
+Enumarations can have more than one case:
+
+```swift
+enum Fruit {
+  case apple
+  case banana
+  case orange
+  case grape
+  case strawberry
+  case blueberry
+  case rasberry
+}
+```
+
+You can initlize a enum like this:
+
+```swift
+var myFavoriteFruit = Fruit.banana
+```
