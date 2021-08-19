@@ -47,6 +47,8 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
     - [Properties](#properties)
     - [Initlizers](#initlizers)
   - [Enumarations](#enumarations)
+    - [Associated Values](#associated-values)
+
 
 
 ## Types
