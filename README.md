@@ -1115,3 +1115,45 @@ You can initlize a enum like this:
 ```swift
 var myFavoriteFruit = Fruit.banana
 ```
+
+After that, you can use a shortened form like this:
+
+```swift
+myFavoriteFruit = .rasberry
+```
+
+#### Associated Values
+
+Associated values are written like this:
+
+```swift
+enum EnumName {
+  case caseName(AssociatedTypeOne, AssociatedTypeTwo)
+  case anotherCase(associatedTypeNameOne: AssociatedTypeOne, associatedTypeNameTwo: AssociatedTypeTwo)
+}
+```
+
+Just like this:
+
+```swift
+enum Projectile {
+  case sword(damage: Int, enchantements: [Enchantment])
+  case shield(damageProtectedFromPlayer: Int, enchantments: [Enchantment])
+  case armor(damageProtectedFromPlayer: Int, heaviness: Int, enchantements: [Enchantment])
+  case potion(effect: Enchantment, fullness: Percent)
+}
+```
+
+You can initlize a enum with cases with associated values like this:
+
+```swift
+var myProjectile = Projectile.sword(damage: Int, enchantments: [.doubleTheDamage, .weakness(100)])
+```
+
+You can change it like this:
+
+```swift
+myProjectile = .potion(effect: .weakness(100), fullness: Percent(100))
+```
+
+
