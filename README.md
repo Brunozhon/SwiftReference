@@ -1158,4 +1158,9 @@ You can change it like this:
 myProjectile = .potion(effect: .weakness(100), fullness: Percent(100), type: .splashPotion)
 ```
 
+So why group structures and enumarations together?
 
+<details>
+  <summary>Answer</summary>
+  <p>Because they're <b>value types</b>.</p>
+</details>
