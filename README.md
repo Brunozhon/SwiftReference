@@ -416,7 +416,7 @@ let myBoolean = true
 or used in if loops.
 
 > **Note:**
-> You may not have learned about if loops, but we will learn them later.
+> You may not have learned about if conditionals, but we will learn them later.
 
 ```swift
 if myBoolean {
