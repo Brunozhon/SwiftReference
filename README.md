@@ -540,7 +540,7 @@ func shakeHandsWithAPerson() {
   person.moveForward()
   person.turnLeft()
   person.moveForward()
-  person.shakeHands(with: anotherPerson)
+  person.shakeHands(with: Person(name: "Ben"))
   person.uTurn()
   person.moveForward()
   person.turnLeft()
@@ -572,7 +572,7 @@ func functionName(parameterLabel parameterName: ParameterType) {
 Which solves the problem like this:
 
 ```swift
-func shakeHands(with: Person) {
+func shakeHands(with anotherPerson: Person) {
   person.moveForward()
   person.turnLeft()
   person.moveForward()
