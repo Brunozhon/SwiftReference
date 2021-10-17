@@ -45,7 +45,7 @@ For more information, check out [CONTRIBUTING.md](https://github.com/Brunozhon/S
   - [Structures](#structures)
     - [Methods](#methods)
     - [Properties](#properties)
-    - [Initlizers](#initlizers)
+    - [Initalizers](#initalizers)
   - [Enumarations](#enumarations)
     - [Associated Values](#associated-values)
 
@@ -1008,7 +1008,7 @@ A structure declaration can contain:
 
 - Methods
 - Properties
-- Initlizers
+- Initalizers
 
 #### Methods
 
@@ -1052,9 +1052,9 @@ struct Counter {
 
 Easy peasy.
 
-#### Initlizers
+#### Initalizers
 
-Initlizers intilize structures. Like this:
+Initalizers intialize structures. Like this:
 
 ```swift
 struct Counter {
@@ -1081,7 +1081,7 @@ myCounter.add() // 2
 myCounter.add(10) // 12
 ```
 
-**Did you know?** Structures gain a default initlizer if no initlizer was specifed. So you could initlize a structure like this:
+**Did you know?** Structures gain a default initalizer if no initalizer is specifed. So you could initalize a structure like this:
 
 ```swift
 Counter(x: 1, ...)
@@ -1112,7 +1112,7 @@ enum Fruit {
 }
 ```
 
-You can initlize a enum like this:
+You can initalize a enum like this:
 
 ```swift
 var myFavoriteFruit = Fruit.banana
@@ -1146,7 +1146,7 @@ enum Projectile {
 }
 ```
 
-You can initlize a enum with cases with associated values like this:
+You can initalize a enum with cases with associated values like this:
 
 ```swift
 var myProjectile = Projectile.sword(damage: Int, enchantments: [.doubleTheDamage, .weakness(100)])
@@ -1157,10 +1157,3 @@ You can change it like this:
 ```swift
 myProjectile = .potion(effect: .weakness(100), fullness: Percent(100), type: .splashPotion)
 ```
-
-So why group structures and enumarations together?
-
-<details>
-  <summary>Answer</summary>
-  <p>Because they're <b>value types</b>.</p>
-</details>
