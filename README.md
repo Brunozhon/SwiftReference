@@ -1157,3 +1157,24 @@ You can change it like this:
 ```swift
 myProjectile = .potion(effect: .weakness(100), fullness: Percent(100), type: .splashPotion)
 ```
+
+## Classes
+
+A class is declared like this:
+
+```swift
+class ClassName {
+  fields
+}
+```
+
+Structures are pretty much the same. What's the difference?
+
+Structs | Classes                                                             | Fact           
+--------|---------------------------------------------------------------------|-------------------------
+[x]     |[ ]                                                                  | Are value types
+[ ]     |[x]                                                                  | Are reference types
+[x]     |[x] _(only when all properties are initalized before initalization)_ | Provide a initalizer
+[ ]     |[x]                                                                  | Are immutable by default
+
+That's all the differences!
